@@ -1,5 +1,9 @@
 <?php
-  include "includes/functions.php";
+include_once "includes/functions.php";
+	$users_count = db_query("SELECT COUNT(id) FROM `users` ;")->fetchColumn();
+	$views_count = db_query("SELECT SUM(`views`) FROM `links` ;")->fetchColumn();
+	$links_count = db_query("SELECT COUNT(`long_link`) FROM `links` ;")->fetchColumn();
+	// добавлен счётчик ссылок в системе
 ?>
 <!doctype html>
 <html lang="ru">
@@ -35,4 +39,4 @@
 			</div>
 		</nav>
 	</header>
-	<?php echo get_url(); ?>
+
