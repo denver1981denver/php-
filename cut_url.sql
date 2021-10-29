@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 28 2021 г., 03:56
+-- Время создания: Окт 29 2021 г., 17:58
 -- Версия сервера: 5.7.29
 -- Версия PHP: 7.4.14
 
@@ -41,9 +41,9 @@ CREATE TABLE `links` (
 
 INSERT INTO `links` (`id`, `user_id`, `long_link`, `short_link`, `views`) VALUES
 (1, 1, 'https://yandex.ru', 'amd', 31),
-(3, 2, 'https://google.ru', 'goo', 140),
+(3, 2, 'https://google.ru', 'goo', 159),
 (4, 3, 'https://vk.com', 'vk', 1),
-(7, 2, 'https://glo.academy', 'glo', 1);
+(7, 2, 'https://glo.academy', 'glo', 2);
 
 -- --------------------------------------------------------
 
@@ -62,9 +62,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `pass`) VALUES
-(1, 'Vasek', 'jhg75jje84jkjf8f8jnj58'),
-(2, 'valera', 'ftuiftuiii'),
-(3, 'denis', 'drdjfjkdtykdtktdikt754688');
+(4, 'jmyshenko', '$2y$10$eqFjyAM5beYwyW9GVrVpheC.qy4vK0RChcc02LlNbSmlFSlf9HZ6i');
 
 --
 -- Индексы сохранённых таблиц
@@ -92,7 +90,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `links`
 --
 ALTER TABLE `links`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
